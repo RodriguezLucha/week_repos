@@ -1,0 +1,25 @@
+section {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  font-family: $sans-serif;
+}
+
+section a {
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+  padding: 10px;
+}
+
+section a:hover {
+  background-color: $lightest-gray;
+  text-decoration: none;
+}
+
+#all_link {
+  text-transform: uppercase;
+}
+
+#all_link:hover {
+  text-decoration: underline;
+}

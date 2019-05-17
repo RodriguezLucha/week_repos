@@ -1,0 +1,73 @@
+/* Define application-wide selectors here!*/
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	font-family: $serif;
+	font-size: 12px;
+}
+
+button {
+	background-color: $light-blue;
+	border-color: $blue;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 10px;
+	transition: background-color border-color;
+	font-family: $sans-serif;
+	// text-transform:
+	// font-size:
+	// text-align: right;
+	// margin: auto;
+	// justify-content: flex-end;
+}
+
+button:hover {
+	background-color: $darkest-blue;
+	border-color: $darkest-blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#gear-dropdown-btn {
+	visibility: visible;
+}
+
+#gear-dropdown {
+	visibility: visible;
+	position: absolute;
+}
+
+#gear-dropdown.hidden {
+	visibility: hidden;
+	position: absolute;
+}
+
+
+/*
+	Header Rules
+*/
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: $light-gray;
+}
+
+.hr-top, .hr-bottom {
+	width: 100%;
+	margin: 0;
+}
+
+.hr-top {
+	height: 2px;
+	margin-bottom: 1px;
+}
