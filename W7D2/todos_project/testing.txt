@@ -1,0 +1,6 @@
+store.dispatch(receiveTodo({ id: 5, title: 'wash todos', body: "with soap", done: false}));
+store.getState();
+
+
+store.dispatch(receiveTodos([{ id: 5, title: 'wash todos', body: "with soap", done: false}, { id: 1, title: 'wash dishes', body: "with dishsoap", done: true}, { id: 2, title: 'wash clothes', body: "with detergent", done: true}]));
+store.getState();
