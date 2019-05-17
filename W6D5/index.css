@@ -1,0 +1,73 @@
+body {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  background-image: url('https://ionesfly.files.wordpress.com/2015/08/waka-flocka-flame-workin.jpg?quality=80&strip=all&w=900&h=900');
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.clock {
+  margin: 0 auto;
+  background-color: red;
+  width: 50%;
+  border: 10px solid black;
+}
+
+.clock-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+}
+
+.tabs-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.tabs h1 {
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  background-color: burlywood;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 3px solid black;
+  margin-bottom: -3px;
+}
+
+h1.activeTab {
+  border-bottom: none;
+}
+
+.tabs {
+  padding-left: 0;
+  margin: 0;
+}
+
+.tabs h1:hover {
+  background-color: brown;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabs li {
+  width: 33.333333%;
+}
+
+.tabs-container article {
+  background-color: burlywood;
+  padding: 20px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
