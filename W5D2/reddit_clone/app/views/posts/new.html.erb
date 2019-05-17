@@ -1,0 +1,36 @@
+"New Post LOL"
+
+<h1>new post or new POST lol</h1>
+
+<form action="<%=posts_url%>" method="post" >
+  <%= fat %>
+  <label>Title*
+    <input type="text" name="post[title]">
+  </label>
+
+  <label>Content
+    <input type="text" name="post[content]">
+  </label>
+
+  <label>URL
+      <input type="text" name="post[url]">
+    </label>
+
+  <label>SUBS</label>
+
+  <input type="hidden" name="post[sub_ids][]" value="">
+
+  <% Sub.all.each do |sub| %>
+    <label><%= sub.title %>
+      <input
+        type="checkbox"
+        value="<%= sub.id %>"
+        name="post[sub_ids][]"
+        <%= "checked" if @post.sub_ids.include?(sub.id) %>
+      />
+    </label>
+  <% end %>
+
+  <div>* required</div>
+  <input type="submit" value="New Post">
+</form>
